@@ -1,0 +1,109 @@
+/* LumenOrb v2.0 - Midnight Stealth Theme */
+
+/* -- PALETTE --
+   Background: #121212 (Deep Obsidian)
+   Panel BG:   #1E1E1E (Layer 1)
+   Border:     #2D2D2D (Matte Steel)
+   Input BG:   #181818
+   Text Main:  #E0E0E0
+   Text Dim:   #757575
+   Accent A:   #00BFA5 (Muted Emerald) - User Inputs
+   Accent B:   #5C6BC0 (Soft Indigo)  - System/Structure
+   Warning:    #FF9800
+   Error:      #EF5350
+*/
+
+/* Global Window */
+QMainWindow {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+QWidget {
+    font-family: "Segoe UI", "Inter", sans-serif;
+    font-size: 13px;
+    color: #E0E0E0;
+}
+
+/* --- PANELS --- */
+
+/* Splitter Handle */
+QSplitter::handle {
+    background-color: #121212;
+}
+
+/* Viewport Frame */
+QFrame#viewportFrame {
+    background-color: #0F0F0F; /* Slightly darker for contrast */
+    border: 1px solid #2D2D2D;
+    border-radius: 4px;
+}
+
+/* Telemetry Bar */
+QLabel#telemetryLabel {
+    background-color: #181818;
+    color: #757575;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    padding: 8px 12px;
+    border-top: 1px solid #2D2D2D;
+}
+
+/* --- LOG WIDGET --- */
+QTextEdit#logStream {
+    background-color: #1E1E1E;
+    color: #B0B0B0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    border: 1px solid #2D2D2D;
+    border-radius: 4px;
+    selection-background-color: #5C6BC0;
+}
+
+/* Custom Coloring in Logs (HTML) matches palette */
+
+/* --- CONSOLE INPUT --- */
+QLineEdit#consoleInput {
+    background-color: #181818;
+    color: #00BFA5; /* Emerald text for user input */
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    border: 1px solid #2D2D2D;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 4px;
+}
+
+QLineEdit#consoleInput:focus {
+    border: 1px solid #5C6BC0; /* Indigo highlight on focus */
+}
+
+QLineEdit#consoleInput::placeholder {
+    color: #404040;
+}
+
+/* --- SCROLLBARS (Minimalist) --- */
+QScrollBar:vertical {
+    background-color: #1E1E1E;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #333333;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #5C6BC0; /* Indigo hover */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}

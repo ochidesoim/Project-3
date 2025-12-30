@@ -1,0 +1,77 @@
+{
+  "steps": [
+    {
+      "id": "chamber_out",
+      "op": "cylinder",
+      "params": {
+        "radius": 30.0,
+        "height": 120.0,
+        "x": 0,
+        "y": 0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": "chamber_in",
+      "op": "cylinder",
+      "params": {
+        "radius": 28.0,
+        "height": 118.0,
+        "x": 0,
+        "y": 0,
+        "z": 2.0
+      }
+    },
+    {
+      "id": "chamber_final",
+      "op": "subtract",
+      "params": {
+        "target": "chamber_out",
+        "tool": "chamber_in",
+        "z": 0.0
+      }
+    },
+    {
+      "id": "nozzle_solid",
+      "op": "cone",
+      "params": {
+        "r_bottom": 30.0,
+        "r_top": 40.0,
+        "height": 90.0,
+        "x": 0,
+        "y": 0,
+        "z": 120.0
+      }
+    },
+    {
+      "id": "nozzle_void",
+      "op": "cone",
+      "params": {
+        "r_bottom": 28.0,
+        "r_top": 39.5,
+        "height": 100.0,
+        "x": 0,
+        "y": 0,
+        "z": 119.0
+      }
+    },
+    {
+      "id": "nozzle_final",
+      "op": "subtract",
+      "params": {
+        "target": "nozzle_solid",
+        "tool": "nozzle_void",
+        "z": 0.0
+      }
+    },
+    {
+      "id": "rocket_assembly",
+      "op": "union",
+      "params": {
+        "target": "chamber_final",
+        "tool": "nozzle_final",
+        "z": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "operations": [
+        {
+            "id": "cube",
+            "type": "create_box",
+            "parameters": {
+                "width_mm": 30,
+                "depth_mm": 30,
+                "height_mm": 30,
+                "center": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        }
+    ]
+}

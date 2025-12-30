@@ -1,0 +1,59 @@
+=== PicoGK JSON Bridge Engine (Safe) ===
+    Loading: recipe.json
+    Steps: 3
+      0s    0.0+ Opened C:\Users\Dhrumil\PicoGK.log
+      0s    0.0+ 
+      0s    0.0+ ----------------------------------------
+      0s    0.0+ 
+      0s    0.0+ Current time (UTC): 2025-12-30 08:10:41 (UTC)
+      0s    0.0+ Current local time: 2025-12-30 13:40:41 (+05:30)
+      0s    0.0+ 
+      0s    0.0+ ----------------------------------------
+      0s    0.0+ 
+      0s    0.0+ System Info:
+      0s    0.0+ 
+      0s    0.0+ Machine Name:         IO
+      0s    0.0+ Operating System      Microsoft Windows 10.0.26200
+      0s    0.0+ Version:              Microsoft Windows NT 10.0.26200.0
+      0s    0.0+ OS Architecture:      X64
+      0s    0.0+ Proc Architecture:    X64
+      0s    0.0+ 64 Bit OS:            Yes
+      0s    0.0+ 64 Bit Process:       Yes
+      0s    0.0+ Processor Count:      24
+      0s    0.0+ Working Set:          27MB
+      0s    0.0+ C# Framework:         .NET 9.0.11
+      0s    0.0+ C# CLR Version:       9.0.11
+      0s    0.0+ PicoGK Path:          picogk.1.7
+      0s    0.0+ Command Line:         "D:\Project 3\picogk_runner\bin\Debug\net9.0\PicoGKRunner.dll"
+      0s    0.0+ 
+      0s    0.0+ ----------------------------------------
+      0s    0.0+ 
+      0s    0.0+ Welcome to PicoGK
+      0s    0.0+ Creating Viewer
+      0s    0.3+ PicoGK:    PicoGK Core Library
+      0s    0.0+            1.7.1
+      0s    0.0+            2024-08-03 22:17:59 picogk.1.7
+      0s    0.0+ 
+      0s    0.0+ VoxelSize: 0.5 (mm)
+      0s    0.0+ Happy Computational Engineering!
+      0s    0.0+ 
+      0s    0.0+ 
+      0s    0.0+ Loading lights embedded environment
+      0s    0.0+ Starting tasks.
+      0s    0.0+ 
+    -> Building Geometry...
+       [step_0] box
+      0s    0.0+ Loading Lights
+         MakeBox: STUB (Tiny Sphere)
+       [step_1] cylinder
+         MakeCylinder: STUB (Tiny Sphere)
+       [step_2] union
+    -> Rendering Final Object: step_2
+Unhandled exception. System.ArgumentException: Invalid Hexcode format: Metals/Aluminum. The Hexcode should be either 2, 4 (Gray), 6 or 8 (Color) characters long (not counting optional leading #).
+   at PicoGK.ColorFloat..ctor(String strHex)
+   at PicoGK.ColorFloat.op_Implicit(String hex)
+   at Program.ExecuteRecipe(Recipe recipe) in D:\Project 3\picogk_runner\Program.cs:line 143
+   at Program.<>c__DisplayClass1_0.<Main>b__0() in D:\Project 3\picogk_runner\Program.cs:line 74
+--- CRASH REPRODUCTION 5 (HEAVY 100x100 SAFE) ---
+
+❌ Process DIED with code 3762504530

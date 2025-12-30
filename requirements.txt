@@ -1,0 +1,38 @@
+# LumenOrb v2.0 Dependencies
+
+# Core Framework
+PyQt6>=6.6.0
+PyQt6-Qt6>=6.6.0
+
+# 3D Visualization
+pyvista>=0.43.0
+pyvistaqt>=0.11.0
+vtk>=9.3.0
+
+# Geometry Kernel (Critical - Windows compatibility required)
+# Note: PicoGK installation may require manual setup
+# See: https://github.com/leap71/PicoGK for Windows installation guide
+# picogk>=0.1.0  # Uncomment after verifying Windows installation method
+
+# AI Integration
+google-generativeai>=0.3.0
+openai>=1.0.0  # For local Qwen 2.5 via OpenAI-compatible API
+
+# Template Engine
+jinja2>=3.1.0
+
+# Data Validation
+pydantic>=2.5.0
+
+# System Monitoring
+psutil>=5.9.0
+gputil>=1.4.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Windows-specific (for PicoGK viewer window management)
+pywin32>=306; sys_platform == "win32"
+
+# UI Dashboard
+rich>=13.0.0
