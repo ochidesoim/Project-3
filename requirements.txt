@@ -36,3 +36,10 @@ pywin32>=306; sys_platform == "win32"
 
 # UI Dashboard
 rich>=13.0.0
+
+# Scientific & Math
+pint
+scipy
+sympy
+numpy
+matplotlib
