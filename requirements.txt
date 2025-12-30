@@ -38,8 +38,8 @@ pywin32>=306; sys_platform == "win32"
 rich>=13.0.0
 
 # Scientific & Math
-pint
-scipy
-sympy
-numpy
-matplotlib
+pint>=0.24.0
+scipy>=1.11.0
+sympy>=1.13.0
+numpy>=1.25.0
+matplotlib>=3.8.0
